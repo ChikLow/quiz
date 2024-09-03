@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color:black;
+    margin:0;
+}
+
+div{
+    color:white;
+}
+
+.main-screen,.start-screen,stats-screen{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+
+.main-screen{
+    display: none;
+}
+
+.answers{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    margin-bottom:7.5px;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.question{
+    font-size:2.5em;
+    padding:7.5px;
+}
+
+.answer-button{
+    border: 1px solid white;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+    transition: 0.15s linear;
+}
+
+.answer-button:hover{
+    background:rgb(11, 11, 11);
+    scale:1.05;
+}
+
+.start-button{
+    padding:15px 30px;
+    cursor: pointer;
+    border:1.5px solid white;
+    border-radius: 10px;
+    transition: 0.15s linear;
+}
+
+.start-button:hover{
+    background: grey;
+}
+
+.timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.logo{
+    width:125px;
+    height:100px;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+#seconds{
+    font-size:35px;
+     position: absolute; /* Position the element relative to the nearest positioned ancestor */
+    top: 0;             /* Move it to the top */
+    right:15px;  
+}
+
+.stats-button,.back-button{
+    position:absolute;
+    padding:12.5px 27.5px;
+    cursor: pointer;
+    border:1.5px solid white;
+    border-radius: 10px;
+    transition: 0.15s linear;
+    bottom:10px;
+    right:10px;
+}
+.stats-button:hover{
+    background: white;
+    color:black;
+}
+.back-button:hover{
+    background: white;
+    color:black;
+}
+
+.math-quiz{
+    position:absolute;
+    font-size:30px;
+    font-weight:bold;
+    top:60px;
+}
+
+.label-stats{
+    font-weight:bold;
+    font-size:30px;
+    transition: 0.15s linear;
+    position:absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skip-btn{
+    font-weight: bold;
+    color:grey;
+    border: 1px solid grey;
+    margin:15px;
+    padding:12.5px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#best-accuracy,#total-correct,#total-questions,#all-time-accuracy{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#best-accuracy{
+    top:30%;
+}
+
+#total-correct{
+    top:40%;
+}
+
+#total-questions{
+    top:50%;
+}
+#all-time-accuracy{
+    top:60%;
+}
